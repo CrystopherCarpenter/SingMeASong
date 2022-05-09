@@ -1,3 +1,8 @@
+// import dotenv from 'dotenv';
+// dotenv.config();
+//
+// const baseURL = process.env.REACT_APP_API_BASE_URL;
+
 describe('random song page', () => {
     beforeEach(() => {
         cy.resetDB();

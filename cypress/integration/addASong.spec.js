@@ -1,3 +1,8 @@
+// import dotenv from 'dotenv';
+// dotenv.config();
+//
+// const baseURL = process.env.REACT_APP_API_BASE_URL;
+
 describe('add a song', () => {
     beforeEach(() => {
         cy.resetDB();
@@ -49,12 +54,5 @@ describe('add a song', () => {
         cy.wait('@downvote');
 
         cy.get('div').contains('0');
-    });
-});
-
-describe('top songs page', () => {
-    beforeEach(() => {
-        cy.resetDB();
-        cy.seedDB();
     });
 });
